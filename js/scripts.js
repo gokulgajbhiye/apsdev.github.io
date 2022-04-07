@@ -41,12 +41,12 @@ class globalFooter extends HTMLElement {
         <div class="container">
             <div class="menu-container pt-5">
                 <div class="footer-menu-row row">
-                    <div class="footer-menu-logo text-center col-3">
+                    <div class="footer-menu-logo text-center col-12 col-lg-3">
                         <a href="/index.html" class="grt-logo vertically-middle"><img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg"></a>
                     </div>
-                    <div class="footer-menu-right col-9">
+                    <div class="footer-menu-right col-12 col-lg-9">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-12 col-lg-3">
                                 <ul class="footer-menu mb-5">
                                     <li><a href="">Industries</a></li>
                                     <ul class="footer-sub-menu">
@@ -66,7 +66,7 @@ class globalFooter extends HTMLElement {
                                 </ul>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-lg-3">
                                 <ul class="footer-menu">
                                     <li><a href="">Products</a></li>
                                     <ul class="footer-sub-menu mb-5">
@@ -81,7 +81,7 @@ class globalFooter extends HTMLElement {
                                     <li><a href="">Location</a></li>
                                 </ul>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-lg-3">
                                 <ul class="footer-menu">
                                     <li><a href="">Insights (Blogs)</a></li>
                                     <li><a href="">Innovation</a></li>
@@ -90,11 +90,11 @@ class globalFooter extends HTMLElement {
                                     <li><a href="">Privacy Policy</a></li>
                                 </ul>
                             </div>
-                            <div class="col-3"></div>
+                            <div class="col-12 col-lg-3"></div>
                         </div>
                     </div>
                 </div>
-                <div class="copyright-social-row flex-md-row-reverse">
+                <div class="copyright-social-row flex-row flex-lg-row-reverse">
                     <div class="social-links">
                         <ul>
                             <li>

@@ -228,7 +228,7 @@ ul.footer-sub-menu li a {
     padding: 0 5px;
 }
 
-.fold .container {
+#home-first-fold .container {
     position: relative;
 }
 
@@ -309,7 +309,7 @@ ul.footer-sub-menu li a {
 }
 
 #home-second-fold {
-    background-image: url('../assets/images/9-flip.jpg');
+    background-image: url('../assets/images/backend.png');
     background-size: cover;
     position: relative;
 }
@@ -326,7 +326,7 @@ ul.footer-sub-menu li a {
 }
 
 #home-third-fold {
-    background-image: url('../assets/images/9.jpg');
+    background-image: url('../assets/images/stronger-together.png');
     background-size: cover;
     position: relative;
 }
@@ -391,7 +391,7 @@ ul.footer-sub-menu li a {
     z-index: 0;
 }
 
-#home-sixth-fold {
+#home-sixth-fold>div.backgrounded {
     background-image: url('../assets/images/8.jpg');
     background-size: 100% auto;
     position: relative;
@@ -446,7 +446,7 @@ ul.footer-sub-menu li a {
 }
 
 #home-eighth-fold {
-    background-image: url('../assets/images/9.jpg');
+    background-image: url('../assets/images/what-people-say.png');
     background-size: cover;
     position: relative;
 }
@@ -496,6 +496,109 @@ ul.footer-sub-menu li a {
 
 .card+img {
     margin: 30px 0;
+}
+
+
+/* Mobile and Tablet Portrait */
+
+@media (min-width:0) and (max-width:991px) {
+    .fold img.visibility-hidden {
+        height: calc(100vh);
+    }
+    section#home-first-fold .fold img.visibility-hidden {
+        height: calc(100vh - 60px);
+    }
+    .fold .section-text {
+        top: 55px;
+        position: absolute;
+        margin: 0 !important;
+        width: 100%;
+        left: 0;
+        right: 0;
+        transform: translateY(0);
+    }
+    .fold .container {
+        height: calc(100vh - 60px);
+    }
+    section#home-first-fold {
+        background-position-x: 89%;
+    }
+    #home-first-fold .section-text {
+        padding-left: 20px;
+    }
+    section#home-second-fold {
+        background-position-x: 30%;
+    }
+    section#home-third-fold {
+        background-position-x: 80%;
+        background-position-y: -32px;
+        background-color: #d2d1d2;
+        background-repeat: no-repeat;
+    }
+    .fold .section-text.mob-vertically-middle {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    section#home-fourth-fold {
+        background-position-x: 21%;
+    }
+    .tab-main .nav-item,
+    .tab-main .nav-tabs>.nav-link {
+        flex-basis: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+    section#home-sixth-fold>div.backgrounded {
+        background-size: cover;
+        background-position-x: 75%;
+        background-repeat: no-repeat;
+    }
+    .section-sub-title {
+        font-size: 70px;
+    }
+    .products .container {
+        height: auto;
+    }
+    .cards {
+        top: auto;
+        margin: 0;
+        padding-top: 50px;
+    }
+    #home-seventh-fold {
+        background-position-x: 20%;
+    }
+    #home-seventh-fold .section-text {
+        width: 100%;
+        padding: 0 20px;
+        top: auto;
+        bottom: 60px;
+    }
+    #home-seventh-fold .section-content {
+        width: 100%;
+    }
+    section#home-eighth-fold {
+        background-position-x: 65%;
+        background-position-y: 215px;
+    }
+    #carouselTestimonies {
+        width: 90%;
+        margin-top: 25px;
+    }
+    .copyright-social-row {
+        display: block;
+    }
+    .social-links {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .copyright-text {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .copyright-text>i {
+        top: auto;
+        transform: translateY(0);
+    }
 }
 
 
