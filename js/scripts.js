@@ -7,18 +7,18 @@ class globalHeader extends HTMLElement {
                     <div class="menu-container">
                         <div class="grt-menu-row">
                             <div class="grt-menu-logo">
-                                <a href="/index.html"  class="grt-logo"><img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg"></a>
+                                <a href="index.html"  class="grt-logo"><img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg"></a>
                             </div>
                             <div class="grt-menu-right">
                                 <nav>
                                     <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
                                     <ul class="grt-menu">
-                                        <li><a href="">About</a></li>
-                                        <li><a href="">Contact Us</a></li>                             
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="contact-us.html">Contact Us</a></li>                             
                                         <li><a href="">Careers</a></li>                             
                                         <li><a href="">Blogs</a></li>                             
-                                        <li><a href="">Projects</a></li>                             
-                                        <li><a href="">Products</a></li>                             
+                                        <li><a href="projects.html">Projects</a></li>                             
+                                        <li><a href="products.html">Products</a></li>                             
                                     </ul>
                                 </nav>
                             </div>
@@ -191,7 +191,42 @@ window.addEventListener('DOMContentLoaded', event => {
             $(this).toggleClass("active-dropdown");
         });
     }
+
+    setActiveLink();
+
+    var inputs = document.querySelectorAll('.form-control[type="file"]');
+    Array.prototype.forEach.call(inputs, function(input) {
+        var label = input.nextElementSibling,
+            labelVal = label.innerHTML;
+
+        input.addEventListener('change', function(e) {
+            var fileName = '';
+            if (this.files && this.files.length > 1)
+                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+            else
+                fileName = e.target.value.split('\\').pop();
+
+            if (fileName)
+                label.innerHTML = fileName;
+            else
+                label.innerHTML = labelVal;
+        });
+    });
+
 })(jQuery);
+
+function setActiveLink() {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+
+    $('.grt-menu a').each(element => {
+        var hrefPage = $($('.grt-menu a')[element]).attr('href').split("/").pop();
+        if (page == hrefPage) {
+            $($('.grt-menu a')[element]).addClass('active');
+        }
+    });
+
+}
 
 // Initialize and check for mobile
 $.fn.grtmobile();
