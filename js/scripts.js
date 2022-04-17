@@ -13,10 +13,10 @@ class globalHeader extends HTMLElement {
                                 <nav>
                                     <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
                                     <ul class="grt-menu">
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
                                         <li><a href="contact-us.html">Contact Us</a></li>                             
-                                        <li><a href="">Careers</a></li>                             
-                                        <li><a href="">Blogs</a></li>                             
+                                        <li class="d-none"><a href="" >Careers</a></li>                             
+                                        <li class="d-none"><a href="">Blogs</a></li>                             
                                         <li><a href="projects.html">Projects</a></li>                             
                                         <li><a href="products.html">Products</a></li>                             
                                     </ul>
@@ -212,7 +212,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 label.innerHTML = labelVal;
         });
     });
-
+    AOS.init();
 })(jQuery);
 
 function setActiveLink() {
@@ -222,7 +222,7 @@ function setActiveLink() {
     $('.grt-menu a').each(element => {
         var hrefPage = $($('.grt-menu a')[element]).attr('href').split("/").pop();
         if (page == hrefPage) {
-            $($('.grt-menu a')[element]).addClass('active');
+            $($('.grt-menu a')[element]).parent().addClass('active');
         }
     });
 

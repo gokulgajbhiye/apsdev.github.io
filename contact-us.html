@@ -11,12 +11,19 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/modernizr.js"></script>
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
     <!--star rating css font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/style.css">
+
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
@@ -27,52 +34,52 @@
 
     <!--============= Page Content : start =============-->
     <section id="contact-first-fold" class="subpage-fold">
-        <img class="img-fluid visibility-hidden" alt="powering the world" src="assets/images/6.jpg">
-        <div class="section-text-main backgrounded">
-            <div class="row m-0">
-                <div class="col-7 position-relative">
-                    <div class="container">
-                        <img class="img-fluid visibility-hidden" alt="powering the world" src="assets/images/6-cropped.jpg">
-                        <div class="section-text text-center vertically-middle white right mob-vertically-middle" style="right: 0;">
-                            <span class="section-title">TALK</span>
-                            <span class="section-sub-title">TO US</span>
+        <div class="position-relative">
+            <div class="section-text-main backgrounded">
+                <div class="row m-0 h-100">
+                    <div class="col-12 col-lg-7 position-relative">
+                        <div class="container">
+                            <div class="section-text text-center vertically-middle white right mob-vertically-middle" data-aos="fade-up-left">
+                                <span class="section-title">TALK</span>
+                                <span class="section-sub-title">TO US</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-5 bg-white">
-                    <div class="container vertically-middle px-5 pt-5">
-                        <span class="contact-us-form-title">WE'D LOVE TO KNOW MORE ABOUT YOU AND YOUR REQUIREMENTS.<br>LET'S GET IN TOUCH.</span>
-                        <div class="row my-5">
-                            <div class="col-12">
-                                <span class="form-control-wrapper">
+                    <div class="col-12 col-lg-5 bg-white">
+                        <div class="container vertically-middle px-5 pt-5">
+                            <span class="contact-us-form-title">WE'D LOVE TO KNOW MORE ABOUT YOU AND YOUR REQUIREMENTS.<br>LET'S GET IN TOUCH.</span>
+                            <div class="row my-5">
+                                <div class="col-12">
+                                    <span class="form-control-wrapper">
                                     <span>Name</span>
-                                <input id="txtName" type="text" class="form-control">
-                                </span>
-                            </div>
-                            <div class="col-12">
-                                <span class="form-control-wrapper">
+                                    <input id="txtName" type="text" class="form-control">
+                                    </span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="form-control-wrapper">
                                     <span>Contact no</span>
-                                <input id="txtContactNo" type="tel" class="form-control">
-                                </span>
-                            </div>
-                            <div class="col-12">
-                                <span class="form-control-wrapper">
+                                    <input id="txtContactNo" type="tel" class="form-control">
+                                    </span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="form-control-wrapper">
                                 <span>E mail</span>
-                                <input id="txtEmail" type="email" class="form-control">
-                                </span>
-                            </div>
-                            <div class="col-12">
-                                <span class="form-control-wrapper">
+                                    <input id="txtEmail" type="email" class="form-control">
+                                    </span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="form-control-wrapper">
                                 <span>Message</span>
-                                <input id="txtMessage" type="text" class="form-control">
-                                </span>
+                                    <input id="txtMessage" type="text" class="form-control">
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 pt-4">
-                                <span class="d-block text-center">
-                                <input id="btnSubmit" type="button" class="btn btn-primary btn-submit" value="Submit">
+                            <div class="row">
+                                <div class="col-12 pt-4">
+                                    <span class="d-block text-center">
+                                <a href="javascipt:void(0);" id="btnSubmit" class="btn  btn-submit animated-button victoria-two">Submit</a>
                                 </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,12 +112,13 @@
         </div>
     </section>
     <section id="contact-third-fold" class="subpage-fold position-relative">
-        <img class="img-fluid visibility-hidden" alt="APS family" src="assets/images/5.jpg">
-        <div class="section-text-main backgrounded">
-            <div class="container ">
-                <div class="section-text text-center vertically-middle white right mob-vertically-middle">
-                    <span class="section-title">BE A PART</span>
-                    <span class="section-sub-title">OF APS FAMILY</span>
+        <div class="position-relative">
+            <div class="section-text-main backgrounded">
+                <div class="container ">
+                    <div class="section-text text-center vertically-middle white right mob-vertically-middle" data-aos="fade-up-right">
+                        <span class="section-title">BE A PART</span>
+                        <span class="section-sub-title">OF APS FAMILY</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,7 +133,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-6 py-5">
+                <div class="col-12 col-lg-6 py-5">
                     <span class="aps-form-red-text">CURRENT OPENINGS</span>
                     <span class="aps-form-dark-text">CONTACT HR</span>
                     <div class="row mb-5">
@@ -153,7 +161,7 @@
                     <div class="row">
                         <div class="col-12 pt-4">
                             <span class="d-block text-center">
-                                <input id="btnSubmitResume" type="button" class="btn btn-primary btn-submit" value="Submit">
+                                <a href="javascipt:void(0);" id="btnSubmitResume" type="button" class="btn btn-primary btn-submit animated-button victoria-two">Submit</a>
                                 </span>
                         </div>
                     </div>
@@ -171,6 +179,10 @@
     <!-- Bootstrap core JS-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 

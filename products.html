@@ -11,12 +11,19 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/modernizr.js"></script>
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
     <!--star rating css font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/style.css">
+
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
@@ -27,12 +34,13 @@
 
     <!--============= Page Content : start =============-->
     <section id="products-first-fold" class="subpage-fold">
-        <img class="img-fluid visibility-hidden" alt="pure solutions" src="assets/images/our-products.png">
-        <div class="section-text-main backgrounded">
-            <div class="container ">
-                <div class="section-text text-center vertically-middle white left mob-vertically-middle">
-                    <span class="section-title">OUR</span>
-                    <span class="section-sub-title">PRODUCTS</span>
+        <div class="position-relative">
+            <div class="section-text-main backgrounded">
+                <div class="container ">
+                    <div class="section-text text-center vertically-middle white left mob-vertically-middle" data-aos="fade-up-left">
+                        <span class="section-title">OUR</span>
+                        <span class="section-sub-title">PRODUCTS</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,10 +55,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 text-center">
+                <div class="col-12 col-lg-2 text-center">
                     <img class="img-fluid products-icons" alt="RED" src="assets/images/red-logo1.png">
                 </div>
-                <div class="col-10">
+                <div class="col-12 col-lg-10">
                     <span class="aps-form-dark-text">
                         THE RED (REVOLUTIONIZE EDUCATION DIGITALLY) IS AN END-TO-END SAAS BASED INTEGRATED EDUCATION SOLUTION. WHETHER YOUR INSTITUTE IS SPREAD OVER ACRES OR INSIDE BUILDINGS MEASURING IN METERS, YOU CAN MANAGE AND REGULATE ALL ACADEMIC ACTIVITIES WITH RED. IT'S SO POWERFUL, YET SO SIMPLE. VARIOUS MODULES AIMED TO MEET DIFFERENT NEEDS, GIVING ADMINISTRATORS AN EXACT STATUS AND REAL-TIME ANALYSIS OF INSTITUTIONAL ACTIVITIES
                         AND SUPPORTING THEM TO MAKE ACADEMIC DECISIONS.
@@ -58,20 +66,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 text-center">
+                <div class="col-12 col-lg-2 text-center">
                     <img class="img-fluid products-icons pure-study-icon" alt="pure study" src="assets/images/pure-study-black.png">
                 </div>
-                <div class="col-10">
+                <div class="col-12 col-lg-10">
                     <span class="aps-form-dark-text">
                         WE BELIEVE KNOWLEDGE SHOULD NEVER BE CONFINED. IT ONLY GROWS WHEN YOU SHARE IT WITH OTHERS. WITH THIS VISION, WE'VE BUILT PURESTUDY FORUM - A KNOWLEDGE BUILDING AND SHARING PLATFORM FOR THE EDUCATION SECTOR. A FORUM WHERE ANYONE AND EVERYONE CAN DISCUSS AND SHARE IDEAS, NOT JUST FROM THEIR INSTITUTE'S ECOSYSTEM BUT ALSO FROM EXPERTS FROM THE OUTSIDE WORLD.
                     </span>
                 </div>
             </div>
             <div class="row">
-                <div class="col-2 text-center">
+                <div class="col-12 col-lg-2 text-center">
                     <img class="img-fluid products-icons" alt="red cash" src="assets/images/red-cash.png">
                 </div>
-                <div class="col-10">
+                <div class="col-12 col-lg-10">
                     <span class="aps-form-dark-text">
                         RED CASH FACILITATES AND ACCOUNTS FOR EVERY RUPEE, EVERY PAYMENT AT EDUCATIONAL INSTITUTIONS. A SINGLE APP THAT GIVES YOU THE POWER TO TRACK, ANALYSE EVERYTHING TO DO WITH FINANCES AT YOUR FINGERTIPS.
                     </span>
@@ -89,6 +97,10 @@
     <!-- Bootstrap core JS-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.min.js"></script>
+    <script src="js/main.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
