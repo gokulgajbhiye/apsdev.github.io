@@ -1,41 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Ashoka Purestudy Technologies</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!--============= Header : start =============--> 
-        <site-header></site-header>   
-        <!--============= Header : end =============-->
 
-        <!--============= Page Content : start =============--> 
-        <section id="home-first-fold">
-            
-        </section>
-        <!--============= Page Content : end =============--> 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ashoka Purestudy Technologies</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/modernizr.js"></script>
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <!--star rating css font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/style.css">
 
-        <!--============= Footer  : start =============-->
-        <site-footer></site-footer> 
-        <!--============= Footer  : end =============-->
-        
- 
-        <!-- Bootstrap core JS-->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top" data-hijacking="off" data-animation="rotate">
+    <!--============= Header : start =============-->
+    <site-header></site-header>
+    <!--============= Header : end =============-->
+
+    <!--============= Page Content : start =============-->
+    <section id="home-slider-fold" class="cd-section visible">
+        <div id="carouselMains" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMains" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMains" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMains" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section id="home-first-fold" class="fold">
+                        <div class="section-text-main">
+                            <div class="container ">
+                                <div class="section-text">
+                                    <span class="section-title">Powering the world,<br />passionately.<br />Empowering sectors,<br />digitally.</span>
+                                    <a href="" class="section-btn btn animated-button victoria-two">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section id="home-second-fold" class="fold">
+                        <div class="section-text-main">
+                            <div class="container ">
+                                <div class="section-text text-center vertically-middle right">
+                                    <span class="section-title">LEADING THE</span>
+                                    <span class="section-sub-title">BACKEND</span>
+                                    <a href="" class="section-btn btn animated-button victoria-two">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section id="home-third-fold" class="fold">
+                        <div class="section-text-main">
+                            <div class="container ">
+                                <div class="section-text text-center vertically-middle left mob-vertically-middle">
+                                    <span class="section-title">STRONGER</span>
+                                    <span class="section-sub-title">TOGETHER</span>
+                                    <a href="" class="section-btn btn animated-button victoria-two">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-fourth-fold" class="cd-section fold">
+        <div class="position-relative">
+            <div class="section-text-main backgrounded">
+                <div class="container ">
+                    <div class="section-text text-center vertically-middle right white mob-vertically-middle" data-aos="fade-up-right">
+                        <span class="section-title">SOLUTIONS</span>
+                        <span class="section-sub-title">FOR ALL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-fifth-fold">
+        <div class="tab-main-wrapper">
+            <div class="tab-background"></div>
+            <div class="container ">
+                <div class="tab-main">
+                    <span class="tab-title">INDUSTRIES</span>
+                    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="true"><img class="img-fluid" alt="education" src="assets/images/education.svg"><span>EDUCATION</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="healthcare-tab" data-bs-toggle="tab" data-bs-target="#healthcare" type="button" role="tab" aria-controls="healthcare" aria-selected="false"><img class="img-fluid" alt="healthcare" src="assets/images/health.svg">
+                                        <span>HEALTHCARE</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="traffic-management-tab" data-bs-toggle="tab" data-bs-target="#traffic_management" type="button" role="tab" aria-controls="traffic-management" aria-selected="false"><img class="img-fluid" alt="traffic management" src="assets/images/trafic.svg"><span>TRAFFIC<br>MANAGEMENT</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="cyber-tab" data-bs-toggle="tab" data-bs-target="#cyber" type="button" role="tab" aria-controls="cyber" aria-selected="true"><img class="img-fluid" alt="cyber" src="assets/images/cyber.svg"><span>CYBER SECURITY<br>INFRASTRUCTURE</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="facial-tab" data-bs-toggle="tab" data-bs-target="#facial" type="button" role="tab" aria-controls="facial" aria-selected="false"><img class="img-fluid" alt="facial" src="assets/images/facial.svg"><span>FACIAL<br>RECOGNITION</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="e-library-tab" data-bs-toggle="tab" data-bs-target="#e_library" type="button" role="tab" aria-controls="e-library" aria-selected="false"><img class="img-fluid" alt="e-library" src="assets/images/e-library.svg"><span>E-LIBRARY</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="disaster-tab" data-bs-toggle="tab" data-bs-target="#disaster" type="button" role="tab" aria-controls="disaster" aria-selected="true"><img class="img-fluid" alt="disaster" src="assets/images/disaster.svg"><span>DISASTER<br>MANAGEMENT</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="driving-tab" data-bs-toggle="tab" data-bs-target="#driving" type="button" role="tab" aria-controls="driving" aria-selected="false"><img class="img-fluid" alt="driving" src="assets/images/driving.svg"><span>DRIVING TEST<br>AUTOMATION</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="smart-id-tab" data-bs-toggle="tab" data-bs-target="#smart_id" type="button" role="tab" aria-controls="smart-id" aria-selected="false"><img class="img-fluid" alt="smart id" src="assets/images/smart id.svg"><span>SMART-ID</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="e-governance-tab" data-bs-toggle="tab" data-bs-target="#e_governance" type="button" role="tab" aria-controls="e-governance" aria-selected="false"><img class="img-fluid" alt="e governance" src="assets/images/e governance.svg"><span>E-GOVERNANCE</span></button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">...</div>
+                        <div class="tab-pane fade" id="healthcare" role="tabpanel" aria-labelledby="healthcare-tab">...</div>
+                        <div class="tab-pane fade" id="traffic_management" role="tabpanel" aria-labelledby="traffic-management-tab">...</div>
+                        <div class="tab-pane fade" id="cyber" role="tabpanel" aria-labelledby="cyber-tab">...</div>
+                        <div class="tab-pane fade" id="facial" role="tabpanel" aria-labelledby="facial-tab">...</div>
+                        <div class="tab-pane fade" id="e_library" role="tabpanel" aria-labelledby="e-library-tab">...</div>
+                        <div class="tab-pane fade" id="disaster" role="tabpanel" aria-labelledby="disaster-tab">...</div>
+                        <div class="tab-pane fade" id="driving" role="tabpanel" aria-labelledby="driving-tab">...</div>
+                        <div class="tab-pane fade" id="smart_id" role="tabpanel" aria-labelledby="smart-id-tab">...</div>
+                        <div class="tab-pane fade" id="e_governance" role="tabpanel" aria-labelledby="e-governance-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-sixth-fold">
+        <div class="backgrounded">
+            <img src="assets/images/8.jpg" class="mw-100 mh-100 visibility-hidden" alt="...">
+            <div class="section-text-main">
+                <div class="container ">
+                    <div class="section-text text-center vertically-middle left" data-aos="fade-up-left">
+                        <span class="section-title">OUR</span>
+                        <span class="section-sub-title">PRODUCTS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container">
+                <div class="cards">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="card text-white">
+                                        <img src="assets/images/tile-2.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <p class="card-text">The RED (Revolutionize Education Digitally) is an end-to-end SaaS based integrated education solution. Whether your institute is spread over acres or inside buildings measuring in meters, you can manage and
+                                                regulate all academic activities with RED. It's so powerful, yet so</p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/red-logo.png" class="mw-70 img-fluid" alt="...">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card text-white">
+                                        <img src="assets/images/tile-1.jpg" class="card-img" alt="..." style="min-height: 229px;">
+                                        <div class="card-img-overlay">
+                                            <p class="card-text">The RED (Revolutionize Education Digitally) is an end-to-end SaaS based integrated education solution. Whether your institute is spread over acres or inside buildings measuring in meters, you can manage and
+                                                regulate all academic activities with RED. It's so powerful, yet so</p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/red-cash.png" class="mw-70 img-fluid" alt="...">
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card text-white">
+                                        <img src="assets/images/tile-3.jpg" class="card-img" alt="...">
+                                        <div class="card-img-overlay">
+                                            <p class="card-text">The RED (Revolutionize Education Digitally) is an end-to-end SaaS based integrated education solution. Whether your institute is spread over acres or inside buildings measuring in meters, you can manage and
+                                                regulate all academic activities with RED. It's so powerful, yet so</p>
+                                            <a href="#">Read More</a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/pure-study-black.png" class="mw-70 img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-seventh-fold" class="cd-section fold">
+        <div class="position-relative">
+            <div class="section-text-main backgrounded">
+                <div class="container ">
+                    <div class="section-text vertically-middle right white" data-aos="fade-up-right">
+                        <span class="section-title">ABOUT</span>
+                        <span class="section-sub-title">US</span>
+                        <span class="section-content">India's leading technology-based system integrator, Ashoka Purestudy Technologies, is in the business of empowering sectors digitally to improve efficiency, transparency and accessibility. With the sole objective to delight clients and communities, we embrace deep research to understand the needs to provide revolutionary customised solutions that leave an everlasting impact on society.
+                </span>
+                        <a href="" class="section-btn btn animated-button victoria-two">KNOW MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="home-eighth-fold" class="cd-section fold">
+        <div class="position-relative">
+            <div class="section-text-main backgrounded">
+                <div class="container ">
+                    <div class="section-text text-center vertically-middle left" data-aos="fade-up-left">
+                        <span class="section-title">WHAT</span>
+                        <span class="section-sub-title">PEOPLE SAY</span>
+                        <div id="carouselTestimonies" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselTestimonies" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselTestimonies" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselTestimonies" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <span>"During Covid when all the schools and colleges were closed, APS provided excellent studio setups to teachers which made online learning easier. Also, the e-library has helped thousands of students to refer to any book, anytime, anywhere."</span>
+                                    <span class="testimonies-name">
+                                    Rajesh Sharma
+                                </span>
+                                    <div class="testimonies-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <span>"During Covid when all the schools and colleges were closed, APS provided excellent studio setups to teachers which made online learning easier. Also, the e-library has helped thousands of students to refer to any book, anytime, anywhere."</span>
+                                    <span class="testimonies-name">
+                                    Rajesh Sharma
+                                </span>
+                                    <div class="testimonies-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <span>"During Covid when all the schools and colleges were closed, APS provided excellent studio setups to teachers which made online learning easier. Also, the e-library has helped thousands of students to refer to any book, anytime, anywhere."</span>
+                                    <span class="testimonies-name">
+                                    Rajesh Sharma
+                                </span>
+                                    <div class="testimonies-star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Page Content : end =============-->
+
+    <!--============= Footer  : start =============-->
+    <site-footer></site-footer>
+    <!--============= Footer  : end =============-->
+
+
+    <!-- Bootstrap core JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/velocity.ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
