@@ -1056,6 +1056,46 @@ a.btn-submit.animated-button.victoria-two:after {
     #about-second-fold .backgrounded {
         background-position-x: 25%;
     }
+    .subpage-fold .position-relative {
+        height: auto;
+    }
+    .subpage-fold .backgrounded {
+        position: relative;
+    }
+    .hv-100 {
+        height: 100vh;
+    }
+    .contact-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-icons li {
+        display: inline-flex;
+        padding: 10px 40px;
+        width: 100%;
+    }
+    #contact-first-fold .backgrounded {
+        background-position-x: 25%;
+    }
+    #contact-third-fold .backgrounded {
+        background-position-x: 10%;
+    }
+    .row>* {
+        padding-right: calc(var(--bs-gutter-x) * 1);
+        padding-left: calc(var(--bs-gutter-x) * 1);
+    }
+    .projects-icons {
+        width: 100px;
+    }
+    .aps-form-dark-text {
+        padding: 15px 0 50px;
+    }
+    #projects-first-fold .backgrounded {
+        background-position-x: 7%;
+    }
+    #products-first-fold .backgrounded {
+        background-position-x: 55%;
+    }
 }
 
 
