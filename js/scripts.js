@@ -14,11 +14,11 @@ class globalHeader extends HTMLElement {
                                     <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
                                     <ul class="grt-menu">
                                         <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="products.html">Products</a></li>                             
+                                        <li><a href="projects.html">Projects</a></li>                             
                                         <li><a href="contact-us.html">Contact Us</a></li>                             
                                         <li class="d-none"><a href="" >Careers</a></li>                             
                                         <li class="d-none"><a href="">Blogs</a></li>                             
-                                        <li><a href="projects.html">Projects</a></li>                             
-                                        <li><a href="products.html">Products</a></li>                             
                                     </ul>
                                 </nav>
                             </div>
@@ -68,17 +68,17 @@ class globalFooter extends HTMLElement {
                             </div>
                             <div class="col-12 col-lg-3">
                                 <ul class="footer-menu">
-                                    <li><a href="">Products</a></li>
+                                    <li><a href="products.html">Products</a></li>
                                     <ul class="footer-sub-menu mb-5">
                                         <li><a href="">Red</a></li>
                                         <li><a href="">Red Cash</a></li>
                                         <li><a href="">Red LMS</a></li>
                                         <li><a href="">Pure Study Forum</a></li>
                                     </ul>
-                                    <li><a href="">Connect with us</a></li>
-                                    <li><a href="">About us</a></li>
-                                    <li><a href="">Careers</a></li>
-                                    <li><a href="">Location</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li class="d-none"><a href="">Careers</a></li>
+                                    <li class="d-none"><a href="">Location</a></li>
                                 </ul>
                             </div>
                             <div class="col-12 col-lg-3">

@@ -183,7 +183,7 @@ ul.footer-menu {
 }
 
 ul.footer-menu li a {
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #000;
     text-decoration: none !important;
     display: block;
@@ -679,12 +679,14 @@ ul.grt-menu li.active a {
     display: inline-flex;
     flex-grow: 1;
     border: 0 none;
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #000; */
     border-radius: 0;
     padding-bottom: 0;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     outline: 0 none !important;
     box-shadow: none;
+    font-size: 16px;
 }
 
 .btn-submit {
@@ -924,6 +926,16 @@ a.btn-submit.animated-button.victoria-two:after {
 .subpage-section-text .border-div.right {
     right: 0;
     left: auto;
+}
+
+.input-wrapper {
+    width: auto;
+    display: inline-flex;
+    flex-grow: 1;
+    position: relative;
+    -webkit-box-shadow: 0px 0.6px 0px 0px rgba(147, 149, 152, 1);
+    -moz-box-shadow: 0px 0.6px 0px 0px rgba(147, 149, 152, 1);
+    box-shadow: 0px 0.6px 0px 0px rgba(147, 149, 152, 1);
 }
 
 
