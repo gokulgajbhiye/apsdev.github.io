@@ -430,6 +430,7 @@ margin-top: 60px;
 
 .nav-tabs {
     border: 0 none;
+    overflow: hidden;
 }
 
 .nav-link span {
