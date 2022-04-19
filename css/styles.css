@@ -255,9 +255,19 @@ margin-top: 60px;
 } */
 
 #home-first-fold {
+    position: relative;
+}
+
+#home-first-fold:before {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/images/9.jpg');
     background-size: cover;
-    position: relative;
+    background-position: center center;
 }
 
 .section-text-main {
@@ -331,9 +341,18 @@ margin-top: 60px;
 }
 
 #home-second-fold {
+    position: relative;
+}
+
+#home-second-fold:before {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/images/backend.jpg');
     background-size: cover;
-    position: relative;
 }
 
 .section-sub-title {
@@ -349,9 +368,18 @@ margin-top: 60px;
 }
 
 #home-third-fold {
+    position: relative;
+}
+
+#home-third-fold:before {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/images/stronger-together.png');
     background-size: cover;
-    position: relative;
 }
 
 #home-third-fold .section-btn {
@@ -936,6 +964,48 @@ a.btn-submit.animated-button.victoria-two:after {
     -webkit-box-shadow: 0px 0.6px 0px 0px rgba(147, 149, 152, 1);
     -moz-box-shadow: 0px 0.6px 0px 0px rgba(147, 149, 152, 1);
     box-shadow: 0px 0.6px 0px 0px rgba(147, 149, 152, 1);
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-item.active>section:before {
+    animation: grow 5s linear forwards;
+    opacity: 1;
+}
+
+@keyframes grow {
+    0%,
+    20% {
+        transform: scale(1);
+    }
+    75%,
+    100% {
+        transform: scale(1.15);
+    }
 }
 
 
