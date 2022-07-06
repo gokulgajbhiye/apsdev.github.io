@@ -53,6 +53,10 @@ a.grt-logo img {
     width: 100px;
 }
 
+a.grt-logo span {
+    color: #267481 !important;
+}
+
 .grt-mobile-button {
     display: none;
 }
@@ -451,7 +455,7 @@ margin-top: 60px;
 }
 
 #home-sixth-fold>div.backgrounded {
-    background-image: url('../assets/images/8.jpg');
+    background-image: url('../assets/images/8-cropped.jpg');
     background-size: cover;
     position: relative;
 }

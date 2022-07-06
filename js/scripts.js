@@ -7,7 +7,10 @@ class globalHeader extends HTMLElement {
                     <div class="menu-container">
                         <div class="grt-menu-row">
                             <div class="grt-menu-logo">
-                                <a href="index.html"  class="grt-logo"><img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg"></a>
+                                <a href="index.html"  class="grt-logo">
+                                    <img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg">
+                                    <span>Ashoka Purestudy Technologies</span>
+                                </a>
                             </div>
                             <div class="grt-menu-right">
                                 <nav>
@@ -48,20 +51,21 @@ class globalFooter extends HTMLElement {
                         <div class="row">
                             <div class="col-12 col-lg-3">
                                 <ul class="footer-menu mb-5">
-                                    <li><a href="">Industries</a></li>
+                                    <li><a href="">Sectors</a></li>
                                     <ul class="footer-sub-menu">
                                         <li><a href="">Education</a></li>
                                         <li><a href="">Healthcare</a></li>
-                                        <li><a href="">Logistics</a></li>
+                                        <li><a href="">Traffic & Transport Management</a></li>
                                         <li><a href="">Cyber Security</a></li>
+                                        <li><a href="">Defence</a></li>
+                                        <li><a href="">E-Governance</a></li>
+                                        <!--<li><a href="">Logistics</a></li>
                                         <li><a href="">Disaster Management</a></li>
                                         <li><a href="">Smart-ID</a></li>
-                                        <li><a href="">E-Governance</a></li>
                                         <li><a href="">E-Library</a></li>
-                                        <li><a href="">Traffic Management</a></li>
                                         <li><a href="">Facial Recognition</a></li>
                                         <li><a href="">Driving Test Automation</a></li>
-                                        <li><a href="">Smart City Projects</a></li>
+                                        <li><a href="">Smart City Projects</a></li>-->
                                     </ul>
                                 </ul>
 
@@ -72,7 +76,7 @@ class globalFooter extends HTMLElement {
                                     <ul class="footer-sub-menu mb-5">
                                         <li><a href="">Red</a></li>
                                         <li><a href="">Red Cash</a></li>
-                                        <li><a href="">Red LMS</a></li>
+                                        <!--<li><a href="">Red LMS</a></li>-->
                                         <li><a href="">Pure Study Forum</a></li>
                                     </ul>
                                     <li><a href="contact-us.html">Contact Us</a></li>
