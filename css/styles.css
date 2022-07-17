@@ -187,7 +187,7 @@ ul.footer-menu {
 }
 
 ul.footer-menu li a {
-    /* font-weight: bold; */
+    font-weight: bold;
     color: #000;
     text-decoration: none !important;
     display: block;
@@ -318,8 +318,11 @@ margin-top: 60px;
 #home-first-fold .section-text {
     margin-left: 90px;
     width: 45%;
+    top: 20%;
+    left: 14%;
 }
 
+.section-text.white,
 .section-text.white .section-title,
 .section-text.white .section-sub-title {
     color: #fff;
@@ -532,6 +535,18 @@ margin-top: 60px;
     }
 }
 
+.card-logo-text {
+    color: #000;
+    display: block;
+    text-align: center;
+}
+
+.rev-logo {
+    display: block;
+    max-width: 20%;
+    margin-top: -20px;
+}
+
 #home-seventh-fold .backgrounded {
     background-image: url('../assets/images/1.jpg');
     background-size: cover;
@@ -613,6 +628,53 @@ margin-top: 60px;
     background-size: cover;
 }
 
+#about-first-fold .section-text.left {
+    top: 140px;
+}
+
+#about-first-fold .section-text.right {
+    bottom: 70px;
+    text-align: right;
+}
+
+#about-first-fold .section-sub-title-text {
+    margin-top: 15px;
+    display: block;
+    color: #ffffff;
+}
+
+#about-first-fold .section-sub-title-list {
+    padding: 0;
+}
+
+#about-first-fold .section-sub-title-list li {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#about-first-fold .section-sub-title-list li:before {
+    content: "\2022";
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    padding-right: 15px;
+}
+
+#about-first-fold .right .section-sub-title-list li:before {
+    content: "";
+}
+
+#about-first-fold .right .section-sub-title-list li:after {
+    content: "\2022";
+    color: #FFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    padding-left: 8px;
+    margin-left: 2px;
+}
+
 .subpage-section-text {
     padding-left: 20px;
     margin-top: 0;
@@ -667,6 +729,31 @@ margin-top: 60px;
 #about-second-fold .backgrounded {
     background-image: url('../assets/images/4.jpg');
     background-size: cover;
+}
+
+#about-second-fold .subpage-section-text {
+    padding-top: 75px;
+}
+
+#about-second-fold .section-text.right {
+    bottom: 70px;
+    text-align: right;
+}
+
+#about-second-fold .section-sub-title-text {
+    margin-top: 35px;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+#about-second-fold .section-sub-title-list {
+    padding: 0;
+}
+
+#about-second-fold .section-sub-title-list li {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 #about-third-fold {
@@ -773,6 +860,10 @@ ul.grt-menu li.active a {
     background-size: cover;
 }
 
+.aps-form-dark-text.text-right {
+    text-align: right;
+}
+
 .aps-form-dark-text {
     color: #606161;
     display: block;
@@ -830,6 +921,88 @@ label.form-control {
     padding: 15px 0 0;
 }
 
+.ideas {
+    position: absolute;
+    left: 10%;
+    top: 14%;
+    width: 37%;
+}
+
+.ideas div {
+    position: absolute;
+}
+
+.alt {
+    color: #fff;
+}
+
+.ideas .left {
+    text-align: right;
+}
+
+.ideas .right {
+    right: 0px;
+}
+
+.ideas .idea1 {
+    top: -20px;
+    left: 12%;
+}
+
+.ideas .idea2 {
+    top: 85px;
+    left: 5%;
+}
+
+.ideas .idea3 {
+    top: 185px;
+    left: -25px;
+}
+
+.ideas .idea4 {
+    top: 305px;
+}
+
+.ideas .idea5 {
+    top: 405px;
+    left: 32px;
+}
+
+.ideas .idea6 {
+    top: 575px;
+    left: 55px;
+}
+
+.ideas .idea7 {
+    top: 690px;
+    left: 125px;
+}
+
+.ideas .idea8 {
+    right: 38px;
+    top: 35px;
+}
+
+.ideas .idea9 {
+    top: 212px;
+    right: 25px;
+}
+
+.ideas .idea10 {
+    top: 335px;
+    right: 20px;
+}
+
+.ideas .idea11 {
+    top: 502px;
+    right: 80px;
+}
+
+.ideas .idea12 {
+    top: 630px;
+    right: 68px;
+}
+
 #products-first-fold .backgrounded {
     background-image: url('../assets/images/our-products.png');
     background-size: cover;
@@ -846,8 +1019,8 @@ label.form-control {
 }
 
 .products-icons {
-    max-width: 150px;
     display: inline-block;
+    border: 3px solid #898a8e;
 }
 
 .products-icons-text {
@@ -859,6 +1032,7 @@ label.form-control {
 
 .pure-study-icon {
     margin-top: 20px;
+    border: 3px solid #898a8e;
 }
 
 #contact-first-fold {
@@ -949,6 +1123,10 @@ a.btn-submit.animated-button.victoria-two:after {
 [data-aos^=zoom][data-aos^=zoom].aos-animate.mob-vertically-middle {
     opacity: 1;
     transform: translate3d(0, -50%, 0) scale(1);
+}
+
+.mw-49 {
+    max-width: 49%;
 }
 
 .mw-70 {
