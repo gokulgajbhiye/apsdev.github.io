@@ -49,8 +49,8 @@ a.grt-logo {
 }
 
 a.grt-logo img {
-    max-height: auto;
-    width: 100px;
+    max-height: 71px;
+    width: 60px;
 }
 
 a.grt-logo span {
@@ -174,6 +174,7 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 
 .grt-menu-logo {
     height: 60px;
+    padding-top: 10px;
 }
 
 .visibility-hidden {
@@ -539,12 +540,13 @@ margin-top: 60px;
     color: #000;
     display: block;
     text-align: center;
+    margin-top: 34px;
 }
 
 .rev-logo {
     display: block;
     max-width: 20%;
-    margin-top: -20px;
+    margin-top: -3px;
 }
 
 #home-seventh-fold .backgrounded {
@@ -923,13 +925,14 @@ label.form-control {
 
 .ideas {
     position: absolute;
-    left: 10%;
-    top: 14%;
+    left: 0;
+    top: 0;
     width: 37%;
 }
 
 .ideas div {
     position: absolute;
+    white-space: nowrap;
 }
 
 .alt {
@@ -1210,7 +1213,6 @@ a.btn-submit.animated-button.victoria-two:after {
         width: 100%;
         left: 0;
         right: 0;
-        transform: translateY(0);
     }
     .fold .container {
         height: calc(100vh - 60px);
@@ -1220,8 +1222,9 @@ a.btn-submit.animated-button.victoria-two:after {
     }
     #home-first-fold .section-text {
         padding-left: 20px;
-        top: auto;
-        bottom: 135px;
+        top: 90px;
+        bottom: auto;
+        left: 15px;
     }
     section#home-second-fold {
         background-position-x: 30%;
@@ -1243,7 +1246,7 @@ a.btn-submit.animated-button.victoria-two:after {
         transform: translate3d(100px, 100px, 0);
     } */
     section#home-fourth-fold .backgrounded {
-        background-position-x: 21%;
+        background-position-x: -270px;
     }
     .tab-main .nav-item,
     .tab-main .nav-tabs>.nav-link {
@@ -1369,6 +1372,15 @@ a.btn-submit.animated-button.victoria-two:after {
 
 /* Desktop only style */
 
+@media (min-width:500px) and (max-width:991px) {
+    section#home-fourth-fold .backgrounded {
+        background-position-x: 0;
+    }
+}
+
+
+/* Desktop only style */
+
 @media (min-width:768px) {
     ul.grt-menu li.grt-dropdown:hover>a+ul.grt-dropdown-list {
         display: block;
@@ -1440,21 +1452,85 @@ ul.grt-menu li a:hover {
 }
 
 
-/* Tablet only style */
+/* Tablet only portrait style */
 
 @media (min-width:768px) and (max-width:991px) {
     ul.grt-menu li a {
         font-size: 18px;
     }
+    .menu-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    a.grt-logo img {
+        float: left;
+        margin-right: 15px;
+    }
+    a.grt-logo span {
+        display: block;
+    }
+    .grt-menu-logo {
+        height: 60px;
+        padding-top: 6px;
+    }
+    #home-first-fold:before {
+        background-position: 80% center;
+    }
+    #home-second-fold:before {
+        background-position: 20% center;
+    }
+    #home-third-fold:before {
+        background-position: 80%;
+    }
+    .fold .section-text {
+        top: 65%;
+    }
 }
 
 
-/* Mobile only style */
+/* Tablet only landscape style */
 
-@media (max-width:767px) {
+@media (min-width:991px) and (max-width:1200px) {
+    #home-first-fold .section-text {
+        left: 0;
+    }
+    #home-second-fold:before {
+        background-position-x: 70%;
+    }
+    #home-second-fold .section-text.right {
+        top: 60%;
+    }
+    #home-third-fold:before {
+        background-position-x: 65%;
+    }
+    #home-fourth-fold .backgrounded {
+        background-position-x: -100px;
+    }
+    #home-fourth-fold .section-text {
+        right: 0px;
+    }
+    #home-sixth-fold>div.backgrounded {
+        height: 100%;
+        background-position-x: -250px;
+    }
+    #home-seventh-fold .backgrounded {
+        background-position-x: -170px;
+    }
+    #home-seventh-fold .section-content {
+        width: 90%;
+    }
+    #carouselTestimonies {
+        width: 80%;
+    }
+}
+
+
+/* Mobile only portrait style */
+
+@media (max-width:500px) {
     .menu-container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .grt-mobile-button {
         display: inline-block;
@@ -1531,5 +1607,234 @@ ul.grt-menu li a:hover {
     ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li a {
         display: block;
         font-size: 17px;
+    }
+    #about-first-fold .section-text.left {
+        padding-right: 5px;
+        top: 70px;
+        left: 10px;
+    }
+    #about-first-fold .section-text.right {
+        bottom: 7px;
+        text-align: right;
+        right: 10px;
+    }
+    #about-first-fold .right .section-sub-title-list li:before {
+        display: none;
+    }
+    #about-first-fold .section-sub-title-list li span {
+        display: table-cell;
+        padding-left: 25px;
+    }
+    #about-first-fold .right .section-sub-title-list li:after {
+        display: table-cell;
+    }
+    #about-second-fold .section-text.right {
+        bottom: 10px;
+        text-align: right;
+        right: 10px;
+        padding-left: 25px;
+    }
+    .ideas {
+        width: 100%;
+    }
+    .ideas .idea1 {
+        top: 80px !important;
+        left: 48px !important;
+    }
+    .ideas .idea2 {
+        top: 181px !important;
+        left: 4px !important;
+    }
+    .ideas .idea3 {
+        top: 263px !important;
+        left: 5px !important;
+    }
+    .ideas .idea4 {
+        top: 372px !important;
+        left: 6px !important;
+    }
+    .ideas .idea5 {
+        top: 498px !important;
+        left: 7px !important;
+    }
+    .ideas .idea6 {
+        top: 624px !important;
+        left: 10px !important;
+    }
+    .ideas .idea7 {
+        top: 725px !important;
+        left: 57px !important;
+    }
+    .ideas .idea8 {
+        left: auto !important;
+        right: 7px !important;
+        top: 149px !important;
+    }
+    .ideas .idea9 {
+        left: auto !important;
+        top: 303px !important;
+        right: 10px;
+    }
+    .ideas .idea10 {
+        left: auto !important;
+        top: 480px !important;
+        right: 20px !important;
+    }
+    .ideas .idea11 {
+        left: auto !important;
+        top: 595px !important;
+        right: 14px !important;
+    }
+    .ideas .idea12 {
+        left: auto !important;
+        top: 672px !important;
+        right: 10px !important;
+    }
+    #home-third-fold:before {
+        background-position: -50% 0;
+    }
+    #home-second-fold:before {
+        background-position-x: 25%;
+    }
+    .card-logo-text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .cards {
+        top: -330px;
+    }
+}
+
+
+/* Mobile only landscape style */
+
+@media (min-width:500px) and (max-width:850px) {
+    .ideas {
+        width: 100%;
+    }
+    .ideas .idea1 {
+        top: 22px !important;
+        left: 84px !important;
+    }
+    .ideas .idea2 {
+        top: 80px !important;
+        left: 70px !important;
+    }
+    .ideas .idea3 {
+        top: 111px !important;
+        left: 39px !important;
+    }
+    .ideas .idea4 {
+        top: 173px !important;
+        left: 53px !important;
+    }
+    .ideas .idea5 {
+        top: 209px !important;
+        left: 35px !important;
+    }
+    .ideas .idea6 {
+        top: 315px !important;
+        left: 30px !important;
+    }
+    .ideas .idea7 {
+        top: 365px !important;
+        left: 100px !important;
+    }
+    .ideas .idea8 {
+        left: 320px !important;
+        right: auto !important;
+        top: 5px !important;
+    }
+    .ideas .idea9 {
+        left: 345px !important;
+        top: 130px !important;
+        right: auto !important;
+    }
+    .ideas .idea10 {
+        left: 330px !important;
+        top: 197px !important;
+        right: auto !important;
+    }
+    .ideas .idea11 {
+        left: 303px !important;
+        top: 277px !important;
+        right: auto !important;
+    }
+    .ideas .idea12 {
+        left: 286px !important;
+        top: 339px !important;
+        right: auto !important;
+    }
+    #home-fourth-fold .section-text {
+        right: 0;
+        left: auto;
+        width: 50%;
+    }
+    section#home-sixth-fold .section-text.left {
+        top: 30%;
+    }
+    .rev-logo {
+        margin-top: -16px;
+    }
+    .card-logo-text {
+        margin-top: 20px;
+    }
+    .cards {
+        top: -160px;
+    }
+    #home-seventh-fold .section-text {
+        width: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        right: 15px;
+        left: auto;
+    }
+    #home-eighth-fold .section-text {
+        top: 42%;
+        bottom: auto;
+        width: 50%;
+        left: 16px;
+        transform: translatey(-50%);
+    }
+    #about-first-fold .section-text.left {
+        top: 60px;
+        width: 45%;
+        float: left;
+        position: relative;
+    }
+    #about-first-fold .section-text.right {
+        bottom: auto;
+        top: 60px;
+        width: 45%;
+        float: left;
+        position: relative;
+    }
+    #about-first-fold .section-sub-title {
+        font-size: 60px;
+    }
+    #about-first-fold .section-sub-title-text {
+        font-size: 14px;
+    }
+    #about-first-fold .section-sub-title-list li {
+        font-size: 12px;
+    }
+    #about-second-fold .section-text.right {
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+    }
+    #about-second-fold .section-sub-title {
+        font-size: 60px;
+    }
+    #about-second-fold .section-sub-title-text {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 60%;
+        display: inline-block;
+    }
+    #about-second-fold .section-sub-title-list li {
+        font-size: 12px;
     }
 }
