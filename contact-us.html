@@ -54,32 +54,31 @@
                                         <div class="form-control-wrapper">
                                             <span>Name</span>
                                             <div class="input-wrapper">
-                                                <input id="txtName" type="text" class="form-control">
+                                                <input id="txtName" type="text" class="form-control" data-validations="req" data-group="contact-us" maxlength="100">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 pb-4">
                                         <div class="form-control-wrapper">
-                                            <span>Contact no</span>
+                                            <span>Contact No.</span>
                                             <div class="input-wrapper">
-                                                <input id="txtContactNo" type="tel" class="form-control">
+                                                <input id="txtContactNo" type="tel" class="form-control" data-validations="req" data-group="contact-us" maxlength="10">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 pb-4">
                                         <div class="form-control-wrapper">
-                                            <span>E mail</span>
+                                            <span>Email Id</span>
                                             <div class="input-wrapper">
-                                                <input id="txtEmail" type="email" class="form-control">
-
+                                                <input id="txtEmail" type="email" class="form-control" data-validations="req,email" data-group="contact-us" maxlength="150">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12 pb-4">
                                         <div class="form-control-wrapper">
-                                            <span>Message</span>
+                                            <span>Message Form</span>
                                             <div class="input-wrapper">
-                                                <input id="txtMessage" type="text" class="form-control">
+                                                <input id="txtMessage" type="text" class="form-control" data-validations="req" data-group="contact-us" maxlength="250">
                                             </div>
                                         </div>
                                     </div>
@@ -88,8 +87,9 @@
                                     <div class="col-12 pt-4">
                                         <span class="d-block text-center">
                                         <a href="javascipt:void(0);" id="btnSubmit"
-                                            class="btn  btn-submit animated-button victoria-two">Submit</a>
+                                            class="btn  btn-submit animated-button victoria-two" onclick="return sendEmail(this);" data-group="contact-us">Submit</a>
                                     </span>
+                                        <span id="contactUsMessage" style="display: none;">Your query has been sent!</span>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
                             <div class="form-control-wrapper">
                                 <span>Name</span>
                                 <div class="input-wrapper">
-                                    <input id="txtNameResume" type="text" class="form-control">
+                                    <input id="txtNameResume" type="text" class="form-control" data-validations="req" data-group="uploadResume">
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                             <div class="form-control-wrapper">
                                 <span>Upload resume</span>
                                 <div class="input-wrapper">
-                                    <input id="fileResume" type="file" class="form-control">
+                                    <input id="fileResume" type="file" class="form-control" data-validations="req" data-group="uploadResume">
                                     <label for="fileResume" class="form-control">
                                     </label>
                                 </div>
@@ -174,7 +174,7 @@
                             <div class="form-control-wrapper">
                                 <span>Message</span>
                                 <div class="input-wrapper">
-                                    <input id="txtMessage" type="text" class="form-control">
+                                    <input id="txtMessage" type="text" class="form-control" data-validations="req" data-group="uploadResume">
                                 </div>
                             </div>
                         </div>
@@ -183,7 +183,7 @@
                         <div class="col-12 pt-4 pb-5 mb-5">
                             <span class="d-block text-center">
                                 <a href="javascipt:void(0);" id="btnSubmitResume" type="button"
-                                    class="btn btn-primary btn-submit animated-button victoria-two">Submit</a>
+                                    class="btn btn-primary btn-submit animated-button victoria-two" onclick="return validatePage(this);" data-group="uploadResume">Submit</a>
                             </span>
                         </div>
                     </div>
@@ -204,10 +204,34 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/velocity.ui.min.js"></script>
+    <script src="js/jquery.inputfilter.min.js"></script>
+    <script src="js/smtp.js"></script>
+
     <script src="js/main.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 
+
+    <script>
+        $(document).ready(function() {
+            var options = {
+                allowNumeric: true,
+                allowText: true,
+                allowCustom: [",", "'", " ", ".", "_", "@"]
+            };
+            $("input, textarea").inputfilter(options);
+
+            $('#txtContactNo').inputfilter({
+                allowNumeric: true,
+                allowText: false
+            });
+            $('#txtName,#txtNameResume').inputfilter({
+                allowNumeric: false,
+                allowText: true,
+                allowCustom: [" "]
+            });
+        });
+    </script>
 
 
 

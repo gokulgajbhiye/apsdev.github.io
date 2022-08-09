@@ -187,7 +187,8 @@ ul.footer-menu {
     font-size: 16px;
 }
 
-ul.footer-menu li a {
+ul.footer-menu li a,
+ul.footer-menu li span {
     font-weight: bold;
     color: #000;
     text-decoration: none !important;
