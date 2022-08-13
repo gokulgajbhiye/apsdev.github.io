@@ -242,7 +242,8 @@ function sendEmail(btn, isWithAttachment) {
         if (isWithAttachment) {
             var file = $('#fileResume')[0].files[0];
             getBase64(file).then(function(dataUri) {
-                console.log(dataUri);
+                //console.log(dataUri);
+                const d = new Date()
                 Email.send({
                     //SecureToken: "8d5cc7cb-34ca-48bc-bce9-fd47ece8a69b",
                     Host: "smtp.elasticemail.com",
@@ -251,18 +252,18 @@ function sendEmail(btn, isWithAttachment) {
                     To: 'jai4u.p@gmail.com',
                     From: "admin@ashokapurestudy.com",
                     Subject: "This is the subject",
-                    Body: $('#txtName').val() + " " + $('#txtMessage').val() + " " + $('#txtContactNo').val() + " " + $('#txtEmail').val() + "And this is the body",
+                    Body: $('#txtNameResume').val() + " " + $('#txtMessageResume').val() + " " + "And this is the body",
                     Attachments: [{
-                        name: $('#txtName').val() + "_" + $('#txtContactNo').val() + "_Resume.pdf",
+                        name: $('#txtNameResume').val() + "_" + d.getTime() + "_Resume.pdf",
                         data: dataUri
                     }]
                 }).then(function(message) {
                     console.log(message);
                     return true;
                 });
-                $("#contactUsMessage").fadeIn();
+                $("#contactUsMessageResume").fadeIn();
                 setTimeout(function() {
-                    $("#contactUsMessage").fadeOut();
+                    $("#contactUsMessageResume").fadeOut();
                 }, 5000);
             });
         } else {
