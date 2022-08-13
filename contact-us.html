@@ -89,7 +89,8 @@
                                         <a href="javascipt:void(0);" id="btnSubmit"
                                             class="btn  btn-submit animated-button victoria-two" onclick="return sendEmail(this);" data-group="contact-us">Submit</a>
                                     </span>
-                                        <span id="contactUsMessage" style="display: none;">Your query has been sent!</span>
+                                        <div id="contactUsMessage" class="px-4 text-center" style="display: none;">Your query has been sent!</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -97,28 +98,31 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section id="contact-second-fold">
         <div class="container">
             <ul class="contact-icons justify-content-center">
                 <li>
                     <span>
-                        <img class="img-icon" alt="office location" src="assets/images/location-icon.png">
+                        <img class="img-icon" alt="office location" src="assets/images/location-icon.png" data-bs-toggle="modal" data-bs-target="#officeContactModal">
                     </span>
-                    <span>Office location</span>
+                    <span type="button" class="vertically-middle" style="top: 0;" data-bs-toggle="modal" data-bs-target="#officeContactModal">
+                        Office location
+                    </span>
                 </li>
                 <li>
                     <span>
-                        <img class="img-icon" alt="Contact Details" src="assets/images/contact-icon.png">
+                        <img class="img-icon" alt="Contact Details" src="assets/images/contact-icon.png" data-bs-toggle="modal" data-bs-target="#contactDetailsModal" >
                     </span>
-                    <span>Contact Details</span>
+                    <span type="button" class="vertically-middle" style="top: 0;" data-bs-toggle="modal" data-bs-target="#contactDetailsModal">
+                        Contact Details</span>
                 </li>
                 <li>
                     <span>
-                        <img class="img-icon" alt="Social media Links" src="assets/images/social-media-links.png">
+                        <img class="img-icon" alt="Social media Links" src="assets/images/social-media-links.png" data-bs-toggle="modal" data-bs-target="#socialMediaModal">
                     </span>
-                    <span>Social media Links</span>
+                    <span type="button" class="vertically-middle" style="top: 0;" data-bs-toggle="modal" data-bs-target="#socialMediaModal">
+                        Social media Links</span>
                 </li>
             </ul>
         </div>
@@ -164,7 +168,7 @@
                             <div class="form-control-wrapper">
                                 <span>Upload resume</span>
                                 <div class="input-wrapper">
-                                    <input id="fileResume" type="file" class="form-control" data-validations="req" data-group="uploadResume">
+                                    <input id="fileResume" type="file" class="form-control" data-validations="req" data-group="uploadResume" accept="application/pdf">
                                     <label for="fileResume" class="form-control">
                                     </label>
                                 </div>
@@ -183,7 +187,7 @@
                         <div class="col-12 pt-4 pb-5 mb-5">
                             <span class="d-block text-center">
                                 <a href="javascipt:void(0);" id="btnSubmitResume" type="button"
-                                    class="btn btn-primary btn-submit animated-button victoria-two" onclick="return validatePage(this);" data-group="uploadResume">Submit</a>
+                                    class="btn btn-primary btn-submit animated-button victoria-two" onclick="return sendEmail(this, true);" data-group="uploadResume">Submit</a>
                             </span>
                         </div>
                     </div>
@@ -197,6 +201,99 @@
     <site-footer></site-footer>
     <!--============= Footer  : end =============-->
 
+    <div class="modal fade" id="officeContactModal" tabindex="-1" aria-labelledby="officeContactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header no-border">
+                    <h5 class="modal-title" id="officeContactModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span>
+                            <img class="img-icon" alt="office location" src="assets/images/location-icon.png" data-bs-toggle="modal" data-bs-target="#officeContactModal">
+                        </span>
+                        <strong>Office Location:</strong>
+                    </div>
+                    <div class="px-3 pt-4">401-2-3, Baner BizBay, Near Balewadi Highstreet, Baner, Pune, Maharashtra, 411045.</div>
+                </div>
+                <div class="modal-footer no-border">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactDetailsModal" tabindex="-1" aria-labelledby="contactDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header no-border">
+                    <h5 class="modal-title" id="contactDetailsModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span>
+                            <img class="img-icon" alt="Contact Details" src="assets/images/contact-icon.png" data-bs-toggle="modal" data-bs-target="#contactDetailsModal" >
+                        </span>
+                        <strong>Contact Details:</strong>
+                    </div>
+                    <div class="px-3 pt-4">+91-8669655441</div>
+                    <div class="p-3 pb-0">Email: <a href="mailto:admin@purestudy.com">admin@purestudy.com</a></div>
+                </div>
+                <div class="modal-footer no-border">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="socialMediaModal" tabindex="-1" aria-labelledby="socialMediaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header no-border">
+                    <h5 class="modal-title" id="socialMediaModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span>
+                            <img class="img-icon" alt="Social media Links" src="assets/images/social-media-links.png" data-bs-toggle="modal" data-bs-target="#socialMediaModal">
+                        </span>
+                        <strong>Contact Details:</strong>
+                    </div>
+                    <div class="social-links text-center">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/AshokaPurestudy001/?ref=page_internal" target="_blank"><img alt="facebook" src="assets/images/fb.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/aptpl_001/" target="_blank"><img alt="instagram" src="assets/images/instagram.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ashoka-purestudy-a62869205/" target="_blank"><img alt="linkedin" src="assets/images/icons8-linkedin-circled-48.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.pinterest.com/aptsocialmedia01/" target="_blank"><img alt="pinterest" src="assets/images/pinterest.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC3EE9MX9sRlSH3L98vn3PbA" target="_blank"><img alt="instagram" src="assets/images/youtube.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send/?phone=918669655441&text&type=phone_number&app_absent=0&lang=en" target="_blank"><img alt="whatsapp" src="assets/images/whatsapp.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer no-border">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap core JS-->
     <script src="js/jquery-3.2.1.min.js"></script>

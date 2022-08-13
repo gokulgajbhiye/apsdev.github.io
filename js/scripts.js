@@ -1,5 +1,5 @@
 // Global component : header
-var jkhbKBld = "518FC2407AF7C7075C171275A5C463558701";
+var jkhbKBld = "510626A170F929D57E2487565C0B3AD82E19";
 class globalHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -101,26 +101,26 @@ class globalFooter extends HTMLElement {
                 </div>
                 <div class="copyright-social-row flex-row flex-lg-row-reverse">
                     <div class="social-links">
-                        <ul>
-                            <li>
-                                <a href=""><img alt="facebook" src="assets/images/fb.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="instagram" src="assets/images/instagram.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="twitter" src="assets/images/twitter.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="facebook" src="assets/images/pinterest.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="instagram" src="assets/images/youtube.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="twitter" src="assets/images/whatsapp.png"></a>
-                            </li>
-                        </ul>
+                    <ul>
+                    <li>
+                        <a href="https://www.facebook.com/AshokaPurestudy001/?ref=page_internal" target="_blank"><img alt="facebook" src="assets/images/fb.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/aptpl_001/" target="_blank"><img alt="instagram" src="assets/images/instagram.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ashoka-purestudy-a62869205/" target="_blank"><img alt="linkedin" src="assets/images/icons8-linkedin-circled-48.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/aptsocialmedia01/" target="_blank"><img alt="pinterest" src="assets/images/pinterest.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC3EE9MX9sRlSH3L98vn3PbA" target="_blank"><img alt="instagram" src="assets/images/youtube.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send/?phone=918669655441&text&type=phone_number&app_absent=0&lang=en" target="_blank"><img alt="whatsapp" src="assets/images/whatsapp.png"></a>
+                    </li>
+                </ul>
                     </div>                    <div class="copyright-text">
                         <i class="d-block vertically-middle">Copyrights &copy; 2022 All rights Reserved by Ashoka Purestudy Technologies.</i>
                     </div>
@@ -218,32 +218,86 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    $("#fileResume").on('change', function(event) {
+        var file = event.target.files[0];
+        if (file.size >= 2 * 1024 * 1024) {
+            alert("Please upload PDF of maximum 2MB");
+            return;
+        }
+
+        if (!file.type.match('application/pdf.*')) {
+            alert("Please upload only PDF file");
+            return;
+        }
+
+    });
 
 
     AOS.init();
 })(jQuery);
 
-function sendEmail(btn) {
+
+function sendEmail(btn, isWithAttachment) {
     if (validatePage(btn)) {
-        Email.send({
-            //SecureToken: "59396926-ee27-4575-8635-a8cf3f97e07e",
-            Host: "smtp.elasticemail.com",
-            Username: "admin@apt.com",
-            Password: "518FC2407AF7C7075C171275A5C463558701",
-            To: 'jai4u.p@gmail.com',
-            From: "contactUs@apt.com",
-            Subject: "This is the subject",
-            Body: $('#txtName').val() + " " + $('#txtMessage').val() + " " + $('#txtContactNo').val() + " " + $('#txtEmail').val() + "And this is the body"
-        }).then(function(message) {});
-        $("#contactUsMessage").fadeIn();
-        setTimeout(function() {
-            $("#contactUsMessage").fadeOut();
-        }, 5000);
-        return true;
+        if (isWithAttachment) {
+            var file = $('#fileResume')[0].files[0];
+            getBase64(file).then(function(dataUri) {
+                console.log(dataUri);
+                Email.send({
+                    //SecureToken: "8d5cc7cb-34ca-48bc-bce9-fd47ece8a69b",
+                    Host: "smtp.elasticemail.com",
+                    Username: "admin@ashokapurestudy.com",
+                    Password: "510626A170F929D57E2487565C0B3AD82E19",
+                    To: 'jai4u.p@gmail.com',
+                    From: "admin@ashokapurestudy.com",
+                    Subject: "This is the subject",
+                    Body: $('#txtName').val() + " " + $('#txtMessage').val() + " " + $('#txtContactNo').val() + " " + $('#txtEmail').val() + "And this is the body",
+                    Attachments: [{
+                        name: $('#txtName').val() + "_" + $('#txtContactNo').val() + "_Resume.pdf",
+                        data: dataUri
+                    }]
+                }).then(function(message) {
+                    console.log(message);
+                    return true;
+                });
+                $("#contactUsMessage").fadeIn();
+                setTimeout(function() {
+                    $("#contactUsMessage").fadeOut();
+                }, 5000);
+            });
+        } else {
+            Email.send({
+                //SecureToken: "8d5cc7cb-34ca-48bc-bce9-fd47ece8a69b",
+                Host: "smtp.elasticemail.com",
+                Username: "admin@ashokapurestudy.com",
+                Password: "510626A170F929D57E2487565C0B3AD82E19",
+                To: 'jai4u.p@gmail.com',
+                From: "admin@ashokapurestudy.com",
+                Subject: "This is the subject",
+                Body: $('#txtName').val() + " " + $('#txtMessage').val() + " " + $('#txtContactNo').val() + " " + $('#txtEmail').val() + "And this is the body"
+            }).then(function(message) {
+                console.log(message);
+                return true;
+            });
+            $("#contactUsMessage").fadeIn();
+            setTimeout(function() {
+                $("#contactUsMessage").fadeOut();
+            }, 5000);
+        }
     } else {
         return false;
     }
 }
+
+function getBase64(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+    });
+}
+
 
 const validateEmail = (email) => {
     return email.match(

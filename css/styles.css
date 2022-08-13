@@ -7,6 +7,10 @@ body {
     background-color: transparent;
 }
 
+.no-border {
+    border: 0 none !important;
+}
+
 
 /* Header : Menu and logo */
 
