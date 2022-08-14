@@ -1,4 +1,5 @@
 // Global component : header
+var jkhbKBld = "510626A170F929D57E2487565C0B3AD82E19";
 class globalHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -45,20 +46,20 @@ class globalFooter extends HTMLElement {
             <div class="menu-container pt-5">
                 <div class="footer-menu-row row">
                     <div class="footer-menu-logo text-center col-12 col-lg-3">
-                        <a href="/index.html" class="grt-logo vertically-middle"><img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg"></a>
+                        <a href="index.html" class="grt-logo vertically-middle"><img alt="Ashoka Purestudy Logo" src="assets/images/ap-logo.svg"></a>
                     </div>
                     <div class="footer-menu-right col-12 col-lg-9">
                         <div class="row">
                             <div class="col-12 col-lg-3">
                                 <ul class="footer-menu mb-5">
-                                    <li><a href="">Sectors</a></li>
+                                    <li><!--<a href="">--><span>Sectors</span><!--</a>--></li>
                                     <ul class="footer-sub-menu">
-                                        <li><a href="">Education</a></li>
-                                        <li><a href="">Healthcare</a></li>
-                                        <li><a href="">Traffic & Transport Management</a></li>
-                                        <li><a href="">Cyber Security</a></li>
-                                        <li><a href="">Defence</a></li>
-                                        <li><a href="">E-Governance</a></li>
+                                        <li><!--<a href="">-->Education<!--</a>--></li>
+                                        <li><!--<a href="">-->Healthcare<!--</a>--></li>
+                                        <li><!--<a href="">-->Traffic & Transport Management<!--</a>--></li>
+                                        <li><!--<a href="">-->Cyber Security<!--</a>--></li>
+                                        <li><!--<a href="">-->Defence<!--</a>--></li>
+                                        <li><!--<a href="">-->E-Governance<!--</a>--></li>
                                         <!--<li><a href="">Logistics</a></li>
                                         <li><a href="">Disaster Management</a></li>
                                         <li><a href="">Smart-ID</a></li>
@@ -74,10 +75,10 @@ class globalFooter extends HTMLElement {
                                 <ul class="footer-menu">
                                     <li><a href="products.html">Products</a></li>
                                     <ul class="footer-sub-menu mb-5">
-                                        <li><a href="">Red</a></li>
-                                        <li><a href="">Red Cash</a></li>
+                                        <li><a href="">RED</a></li>
+                                        <li><a href="">REDCash</a></li>
                                         <!--<li><a href="">Red LMS</a></li>-->
-                                        <li><a href="">Pure Study Forum</a></li>
+                                        <li><a href="">Purestudy Forum</a></li>
                                     </ul>
                                     <li><a href="contact-us.html">Contact Us</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
@@ -87,11 +88,11 @@ class globalFooter extends HTMLElement {
                             </div>
                             <div class="col-12 col-lg-3">
                                 <ul class="footer-menu">
-                                    <li><a href="">Insights (Blogs)</a></li>
-                                    <li><a href="">Innovation</a></li>
-                                    <li><a href="">News and Events</a></li>
-                                    <li><a href="">Partner Ecosystem</a></li>
-                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><!--<a href="">--><span>Insights (Blogs)</span><!--</a>--></li>
+                                    <li><!--<a href="">--><span>Innovation</span><!--</a>--></li>
+                                    <li><!--<a href="">--><span>News and Events</span><!--</a>--></li>
+                                    <li><!--<a href="">--><span>Partner Ecosystem</span><!--</a>--></li>
+                                    <li><!--<a href="">--><span>Privacy Policy</span><!--</a>--></li>
                                 </ul>
                             </div>
                             <div class="col-12 col-lg-3"></div>
@@ -100,28 +101,28 @@ class globalFooter extends HTMLElement {
                 </div>
                 <div class="copyright-social-row flex-row flex-lg-row-reverse">
                     <div class="social-links">
-                        <ul>
-                            <li>
-                                <a href=""><img alt="facebook" src="assets/images/fb.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="instagram" src="assets/images/instagram.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="twitter" src="assets/images/twitter.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="facebook" src="assets/images/pinterest.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="instagram" src="assets/images/youtube.png"></a>
-                            </li>
-                            <li>
-                                <a href=""><img alt="twitter" src="assets/images/whatsapp.png"></a>
-                            </li>
-                        </ul>
+                    <ul>
+                    <li>
+                        <a href="https://www.facebook.com/AshokaPurestudy001/?ref=page_internal" target="_blank"><img alt="facebook" src="assets/images/fb.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/aptpl_001/" target="_blank"><img alt="instagram" src="assets/images/instagram.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ashoka-purestudy-a62869205/" target="_blank"><img alt="linkedin" src="assets/images/icons8-linkedin-circled-48.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/aptsocialmedia01/" target="_blank"><img alt="pinterest" src="assets/images/pinterest.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC3EE9MX9sRlSH3L98vn3PbA" target="_blank"><img alt="instagram" src="assets/images/youtube.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send/?phone=918669655441&text&type=phone_number&app_absent=0&lang=en" target="_blank"><img alt="whatsapp" src="assets/images/whatsapp.png"></a>
+                    </li>
+                </ul>
                     </div>                    <div class="copyright-text">
-                        <i class="d-block vertically-middle">Copyrights &copy; 2021 All rights Reserved by Ashoka Purestudy Technologies.</i>
+                        <i class="d-block vertically-middle">Copyrights &copy; 2022 All rights Reserved by Ashoka Purestudy Technologies.</i>
                     </div>
 
                 </div>
@@ -216,8 +217,136 @@ window.addEventListener('DOMContentLoaded', event => {
                 label.innerHTML = labelVal;
         });
     });
+
+    $("#fileResume").on('change', function(event) {
+        var file = event.target.files[0];
+        if (file.size >= 2 * 1024 * 1024) {
+            alert("Please upload PDF of maximum 2MB");
+            return;
+        }
+
+        if (!file.type.match('application/pdf.*')) {
+            alert("Please upload only PDF file");
+            return;
+        }
+
+    });
+
+
     AOS.init();
 })(jQuery);
+
+
+function sendEmail(btn, isWithAttachment) {
+    if (validatePage(btn)) {
+        if (isWithAttachment) {
+            var file = $('#fileResume')[0].files[0];
+            getBase64(file).then(function(dataUri) {
+                //console.log(dataUri);
+                const d = new Date()
+                Email.send({
+                    //SecureToken: "8d5cc7cb-34ca-48bc-bce9-fd47ece8a69b",
+                    Host: "smtp.elasticemail.com",
+                    Username: "admin@ashokapurestudy.com",
+                    Password: "510626A170F929D57E2487565C0B3AD82E19",
+                    To: 'jai4u.p@gmail.com',
+                    From: "admin@ashokapurestudy.com",
+                    Subject: "This is the subject",
+                    Body: $('#txtNameResume').val() + " " + $('#txtMessageResume').val() + " " + "And this is the body",
+                    Attachments: [{
+                        name: $('#txtNameResume').val() + "_" + d.getTime() + "_Resume.pdf",
+                        data: dataUri
+                    }]
+                }).then(function(message) {
+                    console.log(message);
+                    return true;
+                });
+                $("#contactUsMessageResume").fadeIn();
+                setTimeout(function() {
+                    $("#contactUsMessageResume").fadeOut();
+                }, 5000);
+            });
+        } else {
+            Email.send({
+                //SecureToken: "8d5cc7cb-34ca-48bc-bce9-fd47ece8a69b",
+                Host: "smtp.elasticemail.com",
+                Username: "admin@ashokapurestudy.com",
+                Password: "510626A170F929D57E2487565C0B3AD82E19",
+                To: 'jai4u.p@gmail.com',
+                From: "admin@ashokapurestudy.com",
+                Subject: "This is the subject",
+                Body: $('#txtName').val() + " " + $('#txtMessage').val() + " " + $('#txtContactNo').val() + " " + $('#txtEmail').val() + "And this is the body"
+            }).then(function(message) {
+                console.log(message);
+                return true;
+            });
+            $("#contactUsMessage").fadeIn();
+            setTimeout(function() {
+                $("#contactUsMessage").fadeOut();
+            }, 5000);
+        }
+    } else {
+        return false;
+    }
+}
+
+function getBase64(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+    });
+}
+
+
+const validateEmail = (email) => {
+    return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
+
+function validatePage(btn) {
+    var dataGroup = $(btn).attr('data-group');
+    var inputs = $('.form-control[data-validations]');
+    var valid = true;
+
+    inputs.each(function() {
+        var input = this,
+            span = $(input).parent().parent().children('span')[0],
+            spanVal = span.innerHTML;
+        if (dataGroup == $(input).attr('data-group')) {
+            if ($(input).attr("data-validations").indexOf('req') > -1) {
+                if ($.trim($(input).val()) == "") {
+                    $(span).css('color', 'red');
+                    if (span.innerHTML.indexOf("*") == -1)
+                        span.innerHTML = spanVal + "*";
+                    valid = false;
+                } else {
+                    $(span).css('color', '');
+                    span.innerHTML = spanVal = spanVal.replace("*", "");
+                }
+            }
+
+            if ($(input).attr("data-validations").indexOf('email') > -1) {
+                if ($.trim($(input).val()) != "")
+                    if (!validateEmail($(input).val())) {
+                        $(span).css('color', 'red');
+                        if (span.innerHTML.indexOf("*") == -1)
+                            span.innerHTML = spanVal + "*";
+                        if ($('.emailValidator')[0] == undefined)
+                            $(input).parent().append('<span class="emailValidator" style="color:red;font-size: 10px;position: absolute;right: 0;bottom: 5px;">Please enter valid email address.</span>');
+                        valid = false;
+                    } else {
+                        $(span).css('color', '');
+                        span.innerHTML = spanVal = spanVal.replace("*", "");
+                        $('.emailValidator').remove();
+                    }
+            }
+        }
+    });
+    return valid;
+}
 
 function setActiveLink() {
     var path = window.location.pathname;
