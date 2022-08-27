@@ -220,10 +220,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
     $("#fileResume").on('change', function(event) {
         var file = event.target.files[0];
-        if (file.size >= 2 * 1024 * 1024) {
-            alert("Please upload PDF of maximum 2MB");
-            return;
-        }
+        // if (file.size >= 2 * 1024 * 1024) {
+        //     alert("Please upload PDF of maximum 2MB");
+        //     return;
+        // }
 
         if (!file.type.match('application/pdf.*')) {
             alert("Please upload only PDF file");
@@ -266,6 +266,12 @@ function sendEmail(btn, isWithAttachment) {
                     $("#contactUsMessageResume").fadeOut();
                 }, 5000);
             });
+            $('#txtNameResume').val('');
+            $('#txtMessageResume').val('');
+
+            $('#fileResume').val('');
+            $('.form-control[for="fileResume"]').html('');
+
         } else {
             Email.send({
                 //SecureToken: "8d5cc7cb-34ca-48bc-bce9-fd47ece8a69b",
@@ -284,6 +290,10 @@ function sendEmail(btn, isWithAttachment) {
             setTimeout(function() {
                 $("#contactUsMessage").fadeOut();
             }, 5000);
+            $('#txtName').val('');
+            $('#txtMessage').val('');
+            $('#txtContactNo').val('');
+            $('#txtEmail').val('');
         }
     } else {
         return false;
