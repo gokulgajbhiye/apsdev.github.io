@@ -1533,6 +1533,74 @@ ul.grt-menu li a:hover {
 /* Mobile only portrait style */
 
 @media (max-width:500px) {
+    #home-first-fold:before {
+        background-image: url(../assets/images/Home.jpg);
+    }
+    #home-second-fold:before {
+        background-image: url(../assets/images/Innovation.jpg);
+    }
+    #home-third-fold:before {
+        background-image: url(../assets/images/Hands.jpg);
+    }
+    section#home-fourth-fold .backgrounded {
+        background-image: url(../assets/images/Bulb.jpg);
+        background-position-x: 0;
+    }
+    .ideas {
+        display: none;
+    }
+    #home-fourth-fold .section-text {
+        right: 150px;
+        top: calc(85%);
+    }
+    #home-sixth-fold>div.backgrounded {
+        background-image: url(../assets/images/Pencil.jpg);
+    }
+    #home-seventh-fold .backgrounded {
+        background-image: url(../assets/images/King.jpg);
+        background-position-x: 0;
+    }
+    #home-eighth-fold .backgrounded {
+        background-position-x: 0;
+        background-position-y: 0;
+        background-image: url(../assets/images/Say.jpg);
+    }
+    a.grt-logo span {
+        font-size: 14px;
+    }
+    #about-first-fold .backgrounded {
+        background-image: url(../assets/images/Glass_man.jpg);
+        background-position-x: 0;
+    }
+    #about-first-fold .section-text-main .section-sub-title {
+        font-size: 63px;
+    }
+    #about-first-fold .section-sub-title-text {
+        font-size: 13px;
+    }
+    #about-first-fold .section-sub-title-list li {
+        font-size: 12px;
+    }
+    #about-second-fold .backgrounded {
+        background-image: url(../assets/images/Plane.jpg);
+        background-position-x: 0;
+    }
+    #products-first-fold .backgrounded {
+        background-image: url(../assets/images/Products.jpg);
+        background-position-x: 0;
+    }
+    #projects-first-fold .backgrounded {
+        background-image: url(../assets/images/Solutions.jpg);
+        background-position-x: 0;
+    }
+    #contact-first-fold .backgrounded {
+        background-image: url(../assets/images/Talk.jpg);
+        background-position-x: 0;
+        background-size: contain;
+    }
+    #contact-third-fold .backgrounded {
+        background-image: url(../assets/images/Stairs.jpg);
+    }
     .menu-container {
         padding-left: 0;
         padding-right: 0;
