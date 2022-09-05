@@ -4,7 +4,7 @@ class globalHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <header>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="menu-container">
                         <div class="grt-menu-row">
                             <div class="grt-menu-logo">
@@ -54,9 +54,9 @@ class globalFooter extends HTMLElement {
                                 <ul class="footer-menu mb-5">
                                     <li><!--<a href="">--><span>Sectors</span><!--</a>--></li>
                                     <ul class="footer-sub-menu">
-                                        <li><!--<a href="">-->Education<!--</a>--></li>
-                                        <li><!--<a href="">-->Healthcare<!--</a>--></li>
-                                        <li><!--<a href="">-->Traffic & Transport Management<!--</a>--></li>
+                                        <li><a href="projects.html">Education</a></li>
+                                        <li><a href="projects.html">Healthcare</a></li>
+                                        <li><a href="projects.html">Traffic & Transport Management</a></li>
                                         <li><!--<a href="">-->Cyber Security<!--</a>--></li>
                                         <li><!--<a href="">-->Defence<!--</a>--></li>
                                         <li><!--<a href="">-->E-Governance<!--</a>--></li>
@@ -75,10 +75,10 @@ class globalFooter extends HTMLElement {
                                 <ul class="footer-menu">
                                     <li><a href="products.html">Products</a></li>
                                     <ul class="footer-sub-menu mb-5">
-                                        <li><a href="">RED</a></li>
-                                        <li><a href="">REDCash</a></li>
+                                        <li><a href="products.html">RED</a></li>
+                                        <li><a href="products.html">REDCash</a></li>
                                         <!--<li><a href="">Red LMS</a></li>-->
-                                        <li><a href="">Purestudy Forum</a></li>
+                                        <li><a href="products.html">Purestudy Forum</a></li>
                                     </ul>
                                     <li><a href="contact-us.html">Contact Us</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
